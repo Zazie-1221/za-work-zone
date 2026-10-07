@@ -1,0 +1,23 @@
+{
+  "identifier": "default",
+  "description": "ZAのWork-Zone desktop window",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-start-dragging",
+    "core:window:allow-set-size",
+    "core:window:allow-set-min-size",
+    "core:window:allow-set-max-size",
+    "core:window:allow-outer-position",
+    "core:window:allow-outer-size",
+    "core:window:allow-scale-factor",
+    "core:window:allow-set-position",
+    "core:window:allow-current-monitor",
+    "core:window:allow-set-always-on-top",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-set-focus",
+    "core:event:allow-listen",
+    "core:webview:allow-internal-toggle-devtools"
+  ]
+}

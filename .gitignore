@@ -1,0 +1,32 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.log
+npm-debug.log*
+.vite/
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+target/
+# App data / installers
+*.db
+*.db-*
+*.db.bak*
+*.sqlite
+clips/
+*.exe
+*.msi
+*.zip
+# Env / secrets / local tooling
+.env
+.env.*
+*.pem
+*.key
+.grok/
+.tauri/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

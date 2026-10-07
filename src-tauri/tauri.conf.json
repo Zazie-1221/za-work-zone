@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ZA Work-Zone",
+  "version": "0.1.0",
+  "identifier": "studio.za.workzone",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://127.0.0.1:8080",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "ZAのWork-Zone",
+        "width": 408,
+        "height": 760,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": false,
+        "backgroundColor": "#00000000",
+        "alwaysOnTop": true,
+        "dragDropEnabled": true,
+        "visible": true,
+        "skipTaskbar": false,
+        "center": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/icon.ico"]
+  }
+}
