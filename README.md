@@ -1,6 +1,6 @@
 # ZAのWork-Zone
 
-一个悬浮在桌面上的小工作台，专为 Rhino / KeyShot 作品集项目设计：把一个项目的模型、渲染图、参考图、文案放在一起，按阶段推进，剪贴板历史随手拖出原图。
+一个悬浮在桌面上的文件工作台，帮你把杂乱的工作文件自动归好类：文件拖进来按类型和文件名自动分到对应阶段，同一文件的多个版本自动识别，剪贴板里的图片保留原图、随手拖进 PPT 或邮件。适合任何需要整理项目文件的人，比如方案汇报、课程作业、设计项目（Rhino / KeyShot 等建模渲染文件也能自动识别）。
 
 <p>
   <img src="docs/screenshot-panel.png" width="320" alt="主面板" />
@@ -53,7 +53,7 @@ npx tauri build
 
 ## English
 
-**ZAのWork-Zone** is a small always-on-top desktop workspace (Tauri 2 + React) for Rhino / KeyShot portfolio projects: file zones, stage folders (sketch → model → render → delivery), auto-sorting rules, and a clipboard history whose images keep their originals and can be dragged out like real files.
+**ZAのWork-Zone** is a small always-on-top desktop workspace (Tauri 2 + React) that keeps messy work files sorted for you: drop files in and they are auto-sorted into project stages by type and name, file versions are detected automatically, custom rules let you tune the sorting, and clipboard history keeps images at original quality so you can drag them out like real files. It suits anyone who juggles project files (reports, coursework, design projects; Rhino / KeyShot files are recognized too).
 
 - Install: download the `setup.exe` from Releases (Windows x64).
 - Build: `npm install && npm run build && npx tauri build` (don't ship a bare `cargo build` exe; it has no embedded frontend).
